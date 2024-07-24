@@ -25,10 +25,12 @@ export default function RootLayout({
           <nav className="flex w-full justify-between">
             <div className="flex gap-8 p-2 relative">
               <div className="w-[38px] h-[38px] bg-[#f0f0f0] absolute rounded-full opacity-70 top-[1px] left-[0.5px] "></div>
-              <div className="z-10">
+              <div className="z-10 relative">
+                <div className="absolute text-[10px] text-white rounded-full bg-black px-[4px] py-[2px]">home</div>
                 <Image
                   src="/navbar/home.png"
                   alt="home"
+                  className="cursor-pointer"
                   width={22}
                   height={22}
                 />
@@ -36,7 +38,8 @@ export default function RootLayout({
               <div className="z-10">
                 <Image
                   src="/navbar/about.png"
-                  alt="home"
+                  alt="about"
+                  className="cursor-pointer"
                   width={23}
                   height={23}
                 />
@@ -44,7 +47,8 @@ export default function RootLayout({
               <div className="z-10">
                 <Image
                   src="/navbar/projects.png"
-                  alt="home"
+                  alt="projects"
+                  className="cursor-pointer"
                   width={23}
                   height={23}
                 />
@@ -52,7 +56,8 @@ export default function RootLayout({
               <div className="z-10">
                 <Image
                   src="/navbar/products.png"
-                  alt="home"
+                  alt="products"
+                  className="cursor-pointer"
                   width={25}
                   height={24}
                 />
